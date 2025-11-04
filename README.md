@@ -71,6 +71,12 @@ begin
         4'b0111: seg = 7'b1111000;
         4'b1000: seg = 7'b0000000;
         4'b1001: seg = 7'b0010000;
+        4'b1010: seg = 7'b0001000; 
+        4'b1011: seg = 7'b0000011; 
+        4'b1100: seg = 7'b1000110; 
+        4'b1101: seg = 7'b0100001; 
+        4'b1110: seg = 7'b0000110; 
+        4'b1111: seg = 7'b0001110; 
         default: seg = 7'b1111111;
     endcase
 end
@@ -104,7 +110,7 @@ set_property -dict { PACKAGE_PIN A8 IOSTANDARD LVCMOS33 } [get_ports {an[3]}]
 ```
 ## FPGA Implementation Output
 
-<img width="782" height="540" alt="image" src="https://github.com/user-attachments/assets/6d549830-34b0-4916-9370-fc680e71f881" />
+![Fpga - image](https://github.com/user-attachments/assets/3247599e-a8d0-4979-8b7b-bc8024a5691f)
 
 
 ---
